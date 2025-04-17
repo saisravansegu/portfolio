@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .education-section {
+            background-color: #dfe6e9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+        }
+        h2 {
+            color: #444;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .section-table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .section-table th, .section-table td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+            font-size: 18px;
+        }
+        .section-table th {
+            background-color: #555;
+            color: white;
+        }
+        .section-table td ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div style="text-align-last: right;"><br><br>
+            <a href="home.html">Home</a> |
+            <a href="About me.html">About me</a> |
+            <a href="Album.html">Album</a> |
+            <a href="education.html">Education</a> |
+            <a href="contact.html">Contact</a> |
+        </div>
+    </nav>
+    
+    <table border="2" cellspacing="40" cellpadding="40">
+        <tr>
+            <td>
+                <img src="C:\Users\sai sravan\OneDrive\Desktop\jaintr.jpg" width="300" height="300">
+            </td>
+            <td>
+                <img src="C:\Users\sai sravan\Downloads\WhatsApp Image 2025-01-25 at 22.30.33_992ac798.png" width="300" height="300">
+            </td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+             <td>
+                <video width="900" controls autoplay muted>
+                    <source src="C:\Users\sai sravan\OneDrive\Desktop\red sea.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button onclick="changeSpeed(0.5)">0.5x</button>
+                <button onclick="changeSpeed(1)">1x (Normal)</button>
+                <button onclick="changeSpeed(1.5)">1.5x</button>
+                <button onclick="changeSpeed(2)">2x</button
+            </td>
+        </tr>
+    </table>
+    
+    <script>
+        function changeSpeed(speed) {
+            document.getElementById("myVideo").playbackRate = speed;
+        }
+    </script>
+</body>
+</html>
